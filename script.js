@@ -5,8 +5,8 @@ window.addEventListener("load", sidenVises);
 
 function sidenVises() {
     console.log("siden vises");
-    document.querySelector(".container").addEventListener("touched", menuOpenClose);
-    document.querySelector(".container").addEventListener("click", menuOpenClose);
+    document.querySelector("#burger_menu").addEventListener("touched", menuOpenClose);
+    document.querySelector("#burger_menu").addEventListener("click", menuOpenClose);
 
 }
 
@@ -14,11 +14,14 @@ function sidenVises() {
 
 function menuOpenClose() {
     console.log("menu pressed");
-    this.classList.toggle("change");
+    this.classList.toggle("burger_kryds");
     let x = document.querySelector("#mylinks");
     if (x.style.display === "block") {
         x.style.display = "none";
+
+        document.querySelector("#burger_menu").textContent = "☰";
     } else {
         x.style.display = "block";
+        document.querySelector("#burger_menu").textContent = "X";
     }
 }
