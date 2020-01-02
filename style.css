@@ -1,7 +1,49 @@
-/********************************************************* BURGER MENU START****************************************************************/
+/********************************************************* GENERELT START ****************************************************************/
+/********************************************************* GENERELT SLUT ****************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-family: montserrat, sans-serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+}
+
+h1 {
+    font-family: pt-serif-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    position: fixed;
+
+}
+
+/********************************************************* GENERELT SLUT ****************************************************************/
+
+
+/********************************************************* BURGER MENU START ****************************************************************/
+#mylinks p {
+    color: black;
+}
+
+.test1 {
+    background: rgb(230, 248, 244);
+    background: linear-gradient(180deg, rgba(230, 248, 244, 1) 33%, rgba(153, 208, 242, 1) 66%, rgba(219, 225, 228, 1) 100%);
+}
+
+.test2 {
+    background: rgb(219, 225, 228);
+    background: linear-gradient(180deg, rgba(219, 225, 228, 1) 33%, rgba(153, 208, 242, 1) 66%, rgba(230, 248, 244, 1) 99%);
+}
+
 .container {
     display: inline-block;
-    /*    cursor: pointer;*/
+    cursor: pointer;
     position: fixed;
     top: 2vw;
     left: 5vw;
@@ -13,7 +55,8 @@
 .bar3 {
     width: 10vw;
     height: 1.3vw;
-    background-color: #025959;
+    background: rgb(219, 225, 228);
+    background: linear-gradient(180deg, rgba(219, 225, 228, 1) 33%, rgba(153, 208, 242, 1) 66%, rgba(230, 248, 244, 1) 99%);
     margin: 6px 0;
     transition: 0.4s;
 
@@ -41,25 +84,42 @@
 
 #mylinks a {
     text-transform: uppercase;
+    font-family: montserrat, sans-serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+
+    /*    border-bottom: 2px solid black;*/
 }
 
 .menu_background {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
     overflow: hidden;
-    background-color: #F2EEEB;
+    /*    background-color: #025959;*/
     position: absolute;
-    top: 15vw;
-    z-index: 1;
+    top: 28px;
+    left: -5px;
+    z-index: 100;
+    width: 98vw;
+    height: 100vh;
+    align-content: flex-start;
+    margin-top: 5rem;
+
 
 }
 
 
 
 .menu_background a {
-    color: #025959;
+    color: #F4D4A7;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
+
 }
 
 .menu_background a:hover {
@@ -68,4 +128,64 @@
 }
 
 
+
+
+
+
+
+
+#menu1,
+#menu2,
+#menu3,
+#menu5,
+#menu6 {
+    height: 5rem;
+    width: 90%;
+    margin-right: 1.3rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: flex-end;
+}
+
+#menu4 {
+    background-image: url(billeder/animation.png);
+    height: 5.1rem;
+    width: 90%;
+    margin-right: 1.3rem;
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: -8px;
+
+}
+
+.wobble {
+    animation-name: spring;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
 /********************************************************* BURGER MENU SLUT****************************************************************/
+/********************************************************* ANIMATIONER START****************************************************************/
+
+@keyframes spring {
+    0% {
+        box-shadow: 0 0 0 0 rgba(153, 208, 242, 0.39);
+
+    }
+
+    70% {
+        box-shadow: 0 0 0 0 rgba(153, 208, 242, 0.24);
+
+        transform: scale(1.04)
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+
+    }
+}
+
+/********************************************************* ANIMATIONER SLUT****************************************************************/
