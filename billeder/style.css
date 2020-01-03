@@ -1,0 +1,534 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'didot';
+    src: url('fonts/theanodidot-regular-webfont.woff2') format('woff2'),
+        url('fonts/theanodidot-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bodoni_11regular';
+    src: url('fonts/bodoni-11-book-webfont.woff2') format('woff2'),
+        url('fonts/bodoni-11-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('fonts/montserrat-light-webfont.woff2') format('woff2'),
+        url('fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    background-color: #fcf5ef;
+}
+
+img {
+    width: 100%
+}
+
+footer {
+    background-color: #fcf5ef;
+    margin: 10px;
+
+
+}
+
+header {
+    background-color: #fcf5ef;
+
+}
+
+section {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+p {
+    font-family: 'montserratlight', sans-serif;
+    color: #191c1c;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin: 2.1rem;
+    max-width: 70ch;
+}
+
+h1 {
+    font-family: 'didot';
+    font-size: 2.6rem;
+    color: #c53c4a;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+
+}
+
+h2,
+h3 {
+    font-family: 'theano_didotregular', sans-serif;
+
+}
+
+h2 {
+    font-size: 2rem;
+    color: #38363b;
+    margin: 2.1rem;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #38363b;
+    margin: 2.1rem;
+    font-weight: normal;
+
+}
+
+h1 .farver {
+    font-family: 'theano_didotregular';
+    font-size: 3rem;
+    color: #c53c4a;
+    text-transform: uppercase;
+
+}
+
+figcaption {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8rem;
+}
+
+.my_button {
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 80px;
+    width: 80px;
+    background-image: url(ikoner/android-chrome-256x256.png);
+    background-size: cover;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: 'theano_didotregular';
+    border-radius: 10%;
+    border: 4px solid black;
+
+}
+
+.my_button:hover {
+    background-image: url(button.jpg);
+}
+
+/**************** Menu START ****************/
+
+
+
+/* unvisited link */
+header nav a:link {
+    color: #c53c4a;
+}
+
+/* visited link */
+header nav a:visited {
+    color: #c53c4a;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: #2c2825;
+}
+
+/* selected link */
+header nav a:active {
+    color: #3c3732;
+}
+
+header {
+    background: rgb(208, 217, 224);
+    background: linear-gradient(90deg, rgba(208, 217, 224, 0.9962359943977591) 7%, rgba(255, 251, 242, 1) 68%, rgba(180, 180, 180, 1) 100%);
+    /*    background: rgba(2, 2, 2, 0.32);*/
+    /*    background-image: linear-gradient(to bottom, rgba(101, 147, 147, 0.2), rgba(2, 2, 2, 0.2));*/
+    /* Standard syntax (must be last) */
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 5px;
+}
+
+header nav a {
+    padding: 0 0.5rem;
+    font-family: 'montserratlight', sans-serif;
+    text-decoration: none;
+    margin: 0.4rem;
+
+}
+
+
+.center {
+    text-align: center;
+}
+
+/**************** splash START****************/
+
+#splash {
+    width: 100%;
+    height: 65vh;
+    background-image: url(daniel_dalby_splashbillede.jpg);
+    background-size: cover;
+    background-position: 20% 10%;
+    max-width: none;
+
+
+}
+
+/**************** splash SLUT ****************/
+
+/**************** OM START ****************/
+
+
+
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e0ecec;
+
+}
+
+#om .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    line-height: 30px;
+}
+
+/**************** OM SLUT ****************/
+
+/**************** EKSEMPLER START ****************/
+
+
+
+#eksempler .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e0ecec;
+
+}
+
+#eksempler .col {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 600px;
+    justify-content: space-between;
+    background-color: #e0ecec;
+
+
+}
+
+
+#eksempler .col .top {
+    justify-content: space-between;
+}
+
+/**************** EKSEMPLER SLUT ****************/
+
+/**************** TYPOGRAFI START ****************/
+
+
+
+#typografi .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e0ecec;
+}
+
+#typografi .col_wide {
+    flex-grow: 2;
+    flex-basis: 600px;
+
+
+}
+
+#typografi .col_wide .top {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+#typografi .col_wide .txt {
+    flex-grow: 1;
+    flex-basis: 300px;
+    line-height: 30px;
+}
+
+#typografi .col_wide .image {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#typografi .col_wide .bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+#typografi .col_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+    line-height: 30px;
+
+
+}
+
+/**************** KOMPOSITION START ****************/
+
+
+
+#komposition_farver .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #e0ecec;
+}
+
+#komposition_farver .col_wide {
+    flex-grow: 2;
+    flex-basis: 600px;
+    display: flex;
+    line-height: 30px;
+
+}
+
+#komposition_farver .col_narrow {
+    flex-grow: 1;
+    flex-basis: 400px;
+    line-height: 30px;
+    margin: 10px;
+}
+
+#komposition_farver .colors {
+    flex-grow: 1;
+    flex-basis: 200px;
+
+}
+
+#komposition_farver .content {
+    flex-grow: 2;
+    flex-basis: 400px;
+    margin-top: 0.88rem;
+}
+
+/**************** KOMPOSITION SLUT ****************/
+
+/**************** LINKS START ****************/
+
+
+
+#links .sectionwrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #e0ecec;
+    justify-content: space-around;
+}
+
+#links .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+
+}
+
+#links h2 {
+    margin: 20px;
+}
+
+#links a {
+    margin: 20px;
+}
+
+/**************** LINKS SLUT****************/
+
+/**************** EKSTRA START ****************/
+
+
+
+#ekstra .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e0ecec;
+    flex-direction: column;
+}
+
+#ekstra .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    line-height: 30px;
+}
+
+#ekstra .col .image_1 {
+    flex-basis: 300px;
+    flex-grow: 1;
+
+}
+
+#ekstra .col .image_2 {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#ekstra img {
+    width: 70vw;
+    height: 50vh;
+}
+
+/**************** EKSTRA SLUT ****************/
+
+/**************** STYLETILE START ****************/
+
+#styletile .sectionwrapper {
+    background-color: #e0ecec;
+
+}
+
+.farve_1 {
+    background-color: #FC7988;
+    height: 80px;
+    width: 80px;
+    margin: 2rem;
+}
+
+.farve_2 {
+    background-color: #527394;
+    height: 80px;
+    width: 80px;
+    margin: 2rem;
+
+}
+
+.farve_3 {
+    background-color: #96A0D9;
+    height: 80px;
+    width: 80px;
+    margin: 2rem;
+
+}
+
+.farve_4 {
+    background-color: #B73C48;
+    height: 80px;
+    width: 80px;
+    margin: 2rem;
+
+}
+
+.farve_5 {
+    background-color: #B2B2B2;
+    height: 80px;
+    width: 80px;
+    margin: 2rem;
+}
+
+.colors div {
+    height: 80px;
+    width: 80px;
+
+}
+
+#styletile .img_fav {
+    height: 200px;
+    width: 200px;
+}
+
+#styletile h1 {
+    margin: 20px;
+}
+
+#styletile .img_splash {}
+
+/**************** STYLETILE SLUT ****************/
+/**************** MEDIAQUERIES START****************/
+
+
+
+
+
+
+@media (orientation:portrait) and (min-width: 500px) {
+    #splash {
+        width: 100vw;
+        height: 56.25vw;
+
+    }
+
+
+}
+
+@media only screen and (min-width:830px) {
+
+    header nav {
+        flex-direction: row;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    header nav a {
+
+        border-style: inset;
+        padding: 0 0.5rem;
+        margin: 20px;
+        border-bottom: solid;
+        border-right: solid;
+        border-left: none;
+        border-top: none;
+    }
+
+    header nav a:last-child {}
+}
+
+@media only screen and (min-width: 900px) {
+    #eksempler .col {
+        flex-basis: 220px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #splash {
+        width: 100vw;
+        height: 100vh;
+
+
+    }
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+    #ekstra img {
+        width: 600px;
+        height: 800px;
+
+
+    }
+
+
+}

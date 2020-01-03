@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     margin: 0;
     background-image: url(billeder/background.png);
+    background-repeat: no-repeat;
 }
 
 p {
@@ -15,13 +20,28 @@ p {
     font-weight: 400;
 
     font-style: normal;
+
+    margin: 15px;
+
+    font-size: 1rem;
+
+    max-width: 65ch;
 }
 
 h1 {
     font-family: pt-serif-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: pt-serif-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 15px;
+    font-size: 2rem;
 }
 
 header {
@@ -44,6 +64,7 @@ section {
 /********************************************************* BURGER MENU START ****************************************************************/
 #mylinks p {
     color: black;
+    margin: 0;
 }
 
 .gradient1 {
@@ -68,7 +89,7 @@ section {
     font-family: montserrat, sans-serif;
 
     font-weight: 400;
-
+    display: flex;
     font-style: normal;
 
 
@@ -125,10 +146,7 @@ section {
 
 }
 
-#menu_burger_bar a:hover {
-    background-color: #1B9B7A;
-    color: black;
-}
+
 
 
 
@@ -179,6 +197,9 @@ section {
     height: 100vh;
     background-image: url(billeder/splash_mobile.png);
     background-size: 100%;
+    background-repeat: no-repeat;
+
+
 
 }
 
@@ -186,6 +207,23 @@ section {
 
 /********************************************************* FORSIDE SLUT ****************************************************************/
 /********************************************************* WEB START ****************************************************************/
+#web .sectionwrapper {}
+
+#web .col_web {
+    background-color: #C9E7F2;
+    margin: 10px;
+    border-radius: 2%;
+}
+
+#sexy {
+    background-image: url(billeder/test.png);
+    background-size: 100%;
+    height: 62vw;
+    width: 89vw;
+    margin: 0.5rem;
+
+    background-repeat: no-repeat;
+}
 
 /********************************************************* WEB SLUT ****************************************************************/
 /********************************************************* ANIMATIONER START****************************************************************/
@@ -216,6 +254,16 @@ section {
         background-image: url(billeder/splash_desktop_final.png);
     }
 
+    #sexy {
+        background-image: url(billeder/tablet.png);
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+    #sexy {
+        background-image: url(billeder/desktop.png);
+    }
 }
 
 /********************************************************* MEDIAQUERY SLUT****************************************************************/
