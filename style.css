@@ -51,10 +51,13 @@ header {
 
     background-color: rgba(153, 208, 242, 0);
     top: 0;
+
 }
 
 section {
+    max-width: 1200px;
     margin-top: 25vw;
+    margin: 0 auto;
 }
 
 
@@ -65,16 +68,6 @@ section {
 #mylinks p {
     color: black;
     margin: 0;
-}
-
-.gradient1 {
-    background: rgb(230, 248, 244);
-    background: linear-gradient(180deg, rgba(230, 248, 244, 1) 33%, rgba(153, 208, 242, 1) 66%, rgb(219, 225, 228) 100%);
-}
-
-.gradient2 {
-    background: rgb(219, 225, 228);
-    background: linear-gradient(180deg, rgba(219, 225, 228, 1) 33%, rgba(153, 208, 242, 1) 66%, rgba(230, 248, 244, 1) 99%);
 }
 
 
@@ -102,15 +95,14 @@ section {
     margin-bottom: 0;
     color: black;
     font-family: montserrat, sans-serif;
-
     font-weight: 400;
-
     font-style: normal;
 }
 
 
 #mylinks {
     display: none;
+
 
 
 }
@@ -131,8 +123,9 @@ section {
     top: 25vw;
     left: 0;
     width: 100vw;
-    background: rgb(230, 248, 244);
-    background: linear-gradient(180deg, rgba(230, 248, 244, 1) 33%, rgba(153, 208, 242, 1) 66%, rgba(219, 225, 228, 1) 100%);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    background-image: url(billeder/grey_background.png);
 }
 
 
@@ -158,29 +151,20 @@ section {
 #menu1,
 #menu2,
 #menu3,
+#menu4,
 #menu5,
 #menu6 {
     height: 5rem;
     width: 90%;
     margin-right: 1.3rem;
     display: flex;
-    flex-wrap: nowrap;
+    /*    flex-wrap: nowrap;*/
     align-items: center;
     justify-content: flex-start;
-    align-self: flex-end;
+    /*    align-self: flex-end;*/
 }
 
-#menu4 {
-    background-image: url(billeder/animation.png);
-    height: 5.1rem;
-    width: 90%;
-    margin-right: 1.3rem;
 
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: -8px;
-
-}
 
 .wobble {
     animation-name: spring;
@@ -213,15 +197,18 @@ section {
     background-color: #C9E7F2;
     margin: 10px;
     border-radius: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 #sexy {
     background-image: url(billeder/test.png);
     background-size: 100%;
-    height: 62vw;
-    width: 89vw;
+    height: 37vw;
+    width: 56vw;
     margin: 0.5rem;
-
+    border-radius: 2%;
     background-repeat: no-repeat;
 }
 
@@ -251,19 +238,98 @@ section {
 
 @media only screen and (min-width: 600px) {
     #splash {
-        background-image: url(billeder/splash_desktop_final.png);
+        background-image: url(billeder/splash_desktop.png);
     }
 
     #sexy {
         background-image: url(billeder/tablet.png);
     }
-}
 
+    #mylinks {
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    #menu_burger_bar {
+
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        top: 0;
+        width: 100vw;
+        background: rgba(232, 246, 243, 0.07);
+        align-items: center;
+
+
+    }
+
+    #menu_burger_bar a {
+        display: inline-block;
+
+        border-bottom-left-radius: 10%;
+        border-top-right-radius: 10%;
+    }
+
+    #menu_burger_bar a:hover {
+        background-color: #736873;
+        transform: scale(1.5);
+
+
+
+    }
+
+    #burger_menu {
+        display: none;
+    }
+
+    header {
+        position: absolute;
+        top: 0;
+    }
+
+    section {
+        margin-top: 15vw;
+    }
+
+
+    #menu_burger_bar p:hover {
+        color: #bff2ff;
+
+    }
+
+    .wobble {
+        animation-play-state: paused;
+    }
+
+    #menu1,
+    #menu2,
+    #menu3,
+    #menu4,
+    #menu5,
+    #menu6 {}
+
+    #menu1:hover,
+    #menu2:hover,
+    #menu3:hover,
+    #menu4:hover,
+    #menu5:hover,
+    #menu6:hover {}
+
+
+
+
+}
 
 @media only screen and (min-width: 900px) {
     #sexy {
         background-image: url(billeder/desktop.png);
+
     }
+
+
 }
 
 /********************************************************* MEDIAQUERY SLUT****************************************************************/
