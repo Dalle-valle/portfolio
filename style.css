@@ -174,13 +174,22 @@ figure {
     /*    align-self: flex-end;*/
 }
 
-
-
-.wobble {
-    animation-name: spring;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+#menu4 p {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: light 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
+
+
 
 /********************************************************* BURGER MENU SLUT****************************************************************/
 /********************************************************* FORSIDE START ****************************************************************/
@@ -236,21 +245,17 @@ figure {
 /********************************************************* WEB SLUT ****************************************************************/
 /********************************************************* ANIMATIONER START****************************************************************/
 
-@keyframes spring {
+
+
+
+
+@keyframes light {
     0% {
-        box-shadow: 0 0 0 0 rgba(153, 208, 242, 0.39);
-
-    }
-
-    70% {
-        box-shadow: 0 0 0 0 rgba(153, 208, 242, 0.24);
-
-        transform: scale(1.08)
+        background-position: -500%;
     }
 
     100% {
-        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
-
+        background-position: 500%;
     }
 }
 
@@ -296,7 +301,7 @@ figure {
 
     #menu_burger_bar a:hover {
         background-color: #736873;
-        transform: scale(1.5);
+        transform: scale(1.2);
 
 
 
@@ -351,27 +356,3 @@ figure {
 
 
 /****TEST****/
-#menu4 p {
-    position: relative;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 4px;
-    overflow: hidden;
-    background: linear-gradient(90deg, #000, #fff, #000);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: light 4s linear infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
-}
-
-@keyframes light {
-    0% {
-        background-position: -500%;
-    }
-
-    100% {
-        background-position: 500%;
-    }
-}
