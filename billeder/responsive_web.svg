@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="702" height="91" viewBox="0 0 702 91">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 75px;
+        filter: url(#filter);
+        fill: #99d0f2;
+        font-family: "PT Serif";
+        font-weight: 700;
+      }
+    </style>
+    <filter id="filter" x="12" y="15" width="672" height="67" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="-1.888" dy="2.331" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.646"/>
+      <feFlood result="flood" flood-opacity="0.29"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feImage preserveAspectRatio="none" x="20" y="19" width="659" height="54" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjU5IiBoZWlnaHQ9IjU0IiB2aWV3Qm94PSIwIDAgNjU5IDU0Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjMyOS41IiB5MT0iNTQiIHgyPSIzMjkuNSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNhNmM4YjgiIHN0b3Atb3BhY2l0eT0iMC45OTYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNWY0NzViIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI2NTkiIGhlaWdodD0iNTQiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in2="blend"/>
+    </filter>
+  </defs>
+  <g id="Artboard_5" data-name="Artboard 5">
+    <text id="RESPONSIVE_WEB" data-name="RESPONSIVE WEB" class="cls-1" x="19.158" y="71.644">RESPONSIVE WEB</text>
+  </g>
+</svg>

@@ -13,6 +13,8 @@ body {
     margin: 0;
     background-image: url(billeder/background.png);
     background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 p {
@@ -29,14 +31,17 @@ p {
     max-width: 65ch;
 
     text-decoration: none;
+    padding-top: 0.5rem;
 }
 
 h1 {
     font-family: pt-serif-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
+    text-transform: uppercase;
+
 }
 
 h2 {
@@ -49,7 +54,7 @@ h2 {
 
 header {
     position: fixed;
-    height: 25vw;
+    height: 0;
     width: 100%;
 
     background-color: rgba(153, 208, 242, 0);
@@ -69,7 +74,22 @@ figure {
 }
 
 
+a {
+    cursor: pointer;
+    text-decoration: none;
 
+}
+
+.fixer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fixer_2 {}
 
 /********************************************************* GENERELT SLUT ****************************************************************/
 
@@ -125,7 +145,7 @@ figure {
 
     font-style: normal;
 
-    /*    border-bottom: 2px solid black;*/
+
 }
 
 #menu_burger_bar {
@@ -136,6 +156,7 @@ figure {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     background-image: url(billeder/grey_background.png);
+
 }
 
 
@@ -165,7 +186,7 @@ figure {
 #menu5,
 #menu6 {
     height: 5rem;
-    width: 90%;
+    /*    width: 90%;*/
     margin-right: 1.3rem;
     display: flex;
     /*    flex-wrap: nowrap;*/
@@ -184,7 +205,10 @@ figure {
     background: linear-gradient(90deg, #000, #fff, #000);
     background-repeat: no-repeat;
     background-size: 80%;
-    animation: light 4s linear infinite;
+    animation-name: light;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
@@ -212,7 +236,9 @@ figure {
 /********************************************************* WEB START ****************************************************************/
 #web .sectionwrapper {}
 
-#web .col_web {
+.responsive_img img {}
+
+.col {
     background-color: #C9E7F2;
     margin: 10px;
     border-radius: 2%;
@@ -230,8 +256,7 @@ figure {
     border-radius: 2%;
     background-repeat: no-repeat;
     max-width: 72.6rem;
-    transition-property: all;
-    transition-duration: 2s;
+
 }
 
 #sexy a:hover {
@@ -241,8 +266,116 @@ figure {
 
 
 
+.sectionwrapper {
+    background-color: #C9E7F2;
+    border-radius: 1%;
+    margin: 10px;
+}
+
+.col {
+    background-color: #C9E7F2;
+    margin: 10px;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.layout_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0.5rem;
+
+
+
+
+}
+
+.img_wrapper img {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 0.5rem;
+
+
+}
+
+.prototype_1 img {
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prototype_2 img {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#designvalg a {
+    color: #0031ff;
+}
 
 /********************************************************* WEB SLUT ****************************************************************/
+/********************************************************* UX START ****************************************************************/
+/********************************************************* UX SLUT ****************************************************************/
+/********************************************************* CV START ****************************************************************/
+#om img {}
+
+/********************************************************* CV SLUT ****************************************************************/
+/********************************************************* ANIMATION START ****************************************************************/
+
+.game {
+    border: 0;
+    height: 75.25vw;
+    width: 100vw;
+}
+
+#game_frame1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#game_frame2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#wireframez img {
+    max-width: 800px;
+}
+
+#animation a {
+    color: #0031ff;
+
+}
+
+.flexy {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/********************************************************* ANIMATION SLUT ****************************************************************/
+
+
 /********************************************************* ANIMATIONER START****************************************************************/
 
 
@@ -300,7 +433,8 @@ figure {
     }
 
     #menu_burger_bar a:hover {
-        background-color: #736873;
+        background: rgb(104, 86, 102);
+        background: linear-gradient(180deg, rgba(104, 86, 102, 1) 33%, rgba(126, 126, 130, 1) 66%, rgba(144, 159, 154, 1) 100%);
         transform: scale(1.2);
 
 
@@ -317,7 +451,7 @@ figure {
     }
 
     section {
-        margin-top: 10vw;
+        margin-top: 6vw;
     }
 
 
@@ -340,14 +474,31 @@ figure {
 @media only screen and (min-width: 1050px) {
     #sexy {
         background-image: url(billeder/desktop.png);
-
+        transition-property: all;
+        transition-duration: 2s;
     }
 
     #sexy:hover {
         background-image: url(billeder/desktop_dark.png);
     }
 
+    h1 {
+        font-size: 4rem;
+        line-height: 0.5rem;
 
+    }
+
+    .img_wrapper img {
+        flex-grow: 1;
+        height: 300px;
+        width: 500px;
+
+
+    }
+
+    .game {
+        height: 54.25vw;
+    }
 }
 
 /********************************************************* MEDIAQUERY SLUT****************************************************************/
