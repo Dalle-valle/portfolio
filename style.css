@@ -38,7 +38,7 @@ h1 {
     font-family: pt-serif-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     text-align: center;
     text-transform: uppercase;
 
@@ -53,7 +53,7 @@ h2 {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     height: 0;
     width: 100%;
 
@@ -84,7 +84,42 @@ ul {
     list-style-type: none;
 }
 
+
+
+
+h3 {
+    font-family: pt-serif-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /********************************************************* GENERELT SLUT ****************************************************************/
+
+/********************************************************* KNAP START ****************************************************************/
+
+#my_button {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: rgb(104, 86, 102);
+    background: linear-gradient(180deg, rgba(104, 86, 102, 1) 33%, rgba(126, 126, 130, 1) 66%, rgba(144, 159, 154, 1) 100%);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+/********************************************************* KNAP SLUT ****************************************************************/
+
 
 
 /********************************************************* BURGER MENU START ****************************************************************/
@@ -98,7 +133,7 @@ ul {
 
 #burger_menu {
     position: absolute;
-    top: -5rem;
+    top: -5.2rem;
     left: 1.5rem;
     font-size: 2.3rem;
     z-index: 100;
@@ -139,6 +174,7 @@ ul {
     font-style: normal;
 
 
+
 }
 
 #menu_burger_bar {
@@ -149,6 +185,7 @@ ul {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     background-image: url(billeder/grey_background.png);
+
 
 }
 
@@ -231,24 +268,17 @@ ul {
 
 .responsive_img img {}
 
-.col {
-    background-color: #C9E7F2;
-    margin: 10px;
-    border-radius: 2%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-}
+
 
 #sexy {
     background-image: url(billeder/test.png);
     background-size: 100%;
-    height: 43vw;
-    width: 80vw;
+    height: 40vw;
+    width: 60vw;
     margin: 0.5rem;
     border-radius: 2%;
     background-repeat: no-repeat;
-    max-width: 72.6rem;
+    max-width: 60vw;
 
 }
 
@@ -260,20 +290,20 @@ ul {
 
 
 .sectionwrapper {
-    background-color: #C9E7F2;
-    border-radius: 1%;
+    border-radius: 10px;
     margin: 10px;
 }
 
 .col {
-    background-color: #C9E7F2;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     margin: 10px;
-    border-top-right-radius: 2%;
-    border-top-left-radius: 2%;
+
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
+    border: 2px solid #7897AB;
+    border-radius: 10px;
 }
 
 .layout_wrapper {
@@ -282,10 +312,38 @@ ul {
     text-align: center;
     margin: 0.5rem;
 
+}
 
+.buttonwrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
+.button {
+    background: rgb(104, 86, 102);
+    background: linear-gradient(180deg, rgba(104, 86, 102, 1) 33%, rgba(126, 126, 130, 1) 66%, rgba(144, 159, 154, 1) 100%);
+    border-radius: 10px;
+    color: #bff2ff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+
+    max-width: 300px;
 
 }
+
+.button:hover {
+    transform: scale(1.1)
+}
+
+
+
+
+
 
 .img_wrapper img {
     flex-grow: 1;
@@ -378,7 +436,10 @@ ul {
 
 }
 
-#wireframez img {
+#wireframez,
+#wireframez2,
+#wireframez3,
+#wireframez4 img {
     max-width: 800px;
 }
 
@@ -433,6 +494,25 @@ ul {
 }
 
 /********************************************************* ANIMATIONER SLUT****************************************************************/
+.video_responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video_responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 1rem;
+
+}
+
+
+
 /********************************************************* MEDIAQUERY START****************************************************************/
 
 @media only screen and (min-width: 600px) {

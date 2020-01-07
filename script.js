@@ -25,3 +25,32 @@ function menuOpenClose() {
         document.querySelector("#burger_menu").textContent = "X";
     }
 }
+
+
+
+
+
+//Get the button
+
+var mybutton = document.querySelector("#my_button");
+
+window.onscroll = function () {
+    scrollFunction();
+};
+
+document.querySelector("#my_button").addEventListener("click", topFunction);
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
